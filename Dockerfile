@@ -1,6 +1,6 @@
 FROM node:8-alpine
 
-RUN npm install -g docprint
+RUN yarn global add docprint --prefix /usr/local
 
 COPY ./docker-entrypoint.sh /
 
