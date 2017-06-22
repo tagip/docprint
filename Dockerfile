@@ -1,6 +1,7 @@
 FROM node:8-alpine
 
-RUN yarn global add docprint --prefix /usr/local
+RUN yarn global add docprint --prefix /usr/local && \
+  yarn cache clean
 
 COPY ./docker-entrypoint.sh /
 
