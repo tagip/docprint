@@ -1,7 +1,6 @@
 FROM node:8-alpine
 
-RUN npm install -g docprint && \
-  npm cache clear --force
+RUN npm install -g docprint
 
 COPY ./docker-entrypoint.sh /
 
